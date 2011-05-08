@@ -51,16 +51,32 @@ function Get-Repository($path) {
 .Synopsis
 Gets the branches in the current repository
 
+.Parameter Path
+The path to start in. Defaults to '.'.
+
 .Example
 
   # Get the branches
   > Get-Branches
 #>
-function Get-Branches {
-  $gitPath = Find-GitPath .
-  write-host $gitPath
-  $repository = Get-Repository $gitPath
+function Get-Branches($path = '.') {
+  $repository = Get-Repository $path
   $repository.Branches
 }
 
+<#
+.Synopsis
+Gets the commits from the current HEAD back
+
+.Parameter Path
+The path to start in. Defaults to '.'.
+
+.Example
+
+  > Get-Commits
+#>
+function Get-Commits($path = '.') {
+  $repository = Get-Repository $path
+  $repository.Commits  
+}
 
