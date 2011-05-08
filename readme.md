@@ -18,7 +18,8 @@ Then all you need to do is load the module in your profile script:
 
 add the line:
 
-    Import-Module path/to/Git-Got.psm1
+    # note: no file extension at the end of the next line
+    Import-Module path/to/Git-Got
 
 somewhere, save, start a new powershell session, and you're good to
 go.
@@ -27,8 +28,9 @@ go.
 
 Git-Got definds a bunch of functions to call into libgit2sharp. 
 
-    > $repo = Get-Repository path\to\my\project
+    > $repo = New-Repository path\to\my\project
 
+    # below is not implemented yet
     > $repo.Branches | ForEach-Object { $_.Name }
 
 To make it easier to work with on the command line, there are also a
@@ -38,11 +40,12 @@ couple of higher level wrapper functions, so instead of:
 
 you can say:
 
+    # below is not implemented yet
     > Get-Commits $repo -StartAt sha
 
 ## Status
 
-This project is still under heavy development. If you find a loose
+This project is still under heavy development (read: just barely started.) If you find a loose
 floorboard let me know, but don't hurt yourself.
 
 [1]: http://github.com/cbilson/Git-Got
