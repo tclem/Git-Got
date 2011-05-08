@@ -15,6 +15,8 @@
     <file src="readme.md" />
     <file src="src\Git-Got.psm1" />
     <file src="src\Git-Got.psd1" />
+    <file src="src\Util.ps1" />
+    <file src="src\Repository.ps1" />
     <file src="src\git2.dll" />
     <file src="src\LibGit2Sharp.dll" />
   </files>
