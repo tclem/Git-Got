@@ -14,6 +14,7 @@
   <files>
     <file src="readme.md" />
     <file src="src\Git-Got.psm1" />
+    <file src="src\Git-Got.psd1" />
     <file src="src\git2.dll" />
     <file src="src\libgitsharp.dll" />
   </files>
