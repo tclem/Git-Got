@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <id>Git-Got</id>
+    <version>0.0.1</version>
+    <authors>cb</authors>
+    <owners>cb</owners>
+    <projectUrl>http://github.com/cbilson/Git-Got/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Git commandlets, using libgitsharp</description>
+    <tags>git dvcs version-control</tags>
+  </metadata>
+  
+  <files>
+    <file src="readme.md" />
+    <file src="src\Git-Got.psm1" />
+    <file src="lib\git2.dll" />
+    <file src="lib\libgitsharp.dll" />
+  </files>
+</package>
